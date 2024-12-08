@@ -114,7 +114,7 @@ const Page = () => {
 
       {/* Additional Section */}
       <div className="flex flex-col items-center text-center py-12 px-4 sm:px-6 lg:px-8">
-        <p className="text-xs text-black">WE Can't WAIT TO MEET YOU</p>
+        <p className="text-xs text-black">WE Cant WAIT TO MEET YOU</p>
         <h1 className="text-3xl md:text-4xl font-bold mt-4">
           Let’s Talk
         </h1>
