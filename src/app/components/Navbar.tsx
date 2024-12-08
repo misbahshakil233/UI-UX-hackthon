@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           <a href="/contact" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
             Contact
           </a>
-          <a href="#pages" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a href="/moreproduct" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
             Pages
           </a>
         </div>

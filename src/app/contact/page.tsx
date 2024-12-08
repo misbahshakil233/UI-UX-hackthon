@@ -122,7 +122,7 @@ const Page = () => {
           Try it free now
         </button>
       </div>
-      <Footer />
+      
     </div>
   );
 };

@@ -188,7 +188,7 @@ const AboutUs = () => {
     className="w-full h-auto rounded-lg"
   />
 </div>
-<Footer />
+
     </div>
   );
 };
