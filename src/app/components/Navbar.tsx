@@ -46,6 +46,9 @@ const Navbar: React.FC = () => {
           <a href="/moreproduct" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
             Pages
           </a>
+          <a href="/pricing" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+            Pricing
+          </a>
         </div>
 
         {/* Right Section */}

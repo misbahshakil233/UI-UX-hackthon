@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
 
 const Page = () => {
   return (
@@ -259,7 +260,33 @@ const Page = () => {
           </div>
         </div>
       </div>
-
+      
+      
+      {/* Subheading */}
+      <p className="text-3xl font-bold mt-36 text-center">
+      Start your 14 days free trial
+      </p>
+      <h1 className="text-xs font-bold text-gray-400 mt-10 text-center ">
+      Met minim Mollie non desert Alamo est sit cliquey dolor <br></br>
+      do met sent. RELIT official consequent.
+      </h1>
+      <button className="bg-blue-600 px-6 py-4 rounded-lg text-white mt-10 transition-all duration-300 hover:bg-blue-700">
+          Try it free now
+        </button>
+      <div className="flex justify-center md:justify-start space-x-6 mt-8">
+                <a href="https://twitter.com" className="text-blue-600 hover:text-gray-600">
+                  <FaTwitter size={24} />
+                </a>
+                <a href="https://facebook.com" className="text-blue-600 hover:text-gray-600">
+                  <FaFacebookF size={24} />
+                </a>
+                <a href="https://instagram.com" className="text-blue-600 hover:text-gray-600">
+                  <FaInstagram size={24} />
+                </a>
+                <a href="https://linkedin.com" className="text-blue-600 hover:text-gray-600">
+                  <FaLinkedinIn size={24} />
+                </a>
+              </div>
     </div>
   );
 };

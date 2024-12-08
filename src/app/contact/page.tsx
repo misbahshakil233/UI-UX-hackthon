@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaEnvelope } from 'react-icons/fa';
 import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
-import Footer from '../components/Footer'
+
 
 const Page = () => {
   return (
