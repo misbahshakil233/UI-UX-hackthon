@@ -1,21 +1,144 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+import Footer from '../components/Foooter'
 import Link from "next/link";
-
-const Product = () => {
+const Page = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center py-16">
-      {/* Product Text Section */}
-      <div className="mb-8">
-        <div className="text-gray-400 text-xl sm:text-2xl">Featured Product</div>
-        <h1 className="text-3xl sm:text-4xl font-bold text-black my-4">Bestseller Product</h1>
-        <p className="text-gray-400 text-base sm:text-lg">
-          Problems trying to resolve the conflict between
-        </p>
+    <div>
+      
+      <div style={{ padding: "20px" }}>
+        {/* Content Above Image */}
+        <div style={{ marginBottom: "10px" }}>
+          <h1 style={{ margin: "0 0 10px" }}>Product List</h1>
+          <p style={{ margin: 0 }}>Explore our collection of amazing products below!</p>
+        </div>
+
+        {/* Image Section */}
+        <Image
+          src="/list.png" // Path to the image (relative to the 'public' folder)
+          alt="Product Image"
+          width={3000} // Width of the image
+          height={200} // Height of the image
+          style={{ maxWidth: "100%", height: "auto", display: "block" }}
+        />
       </div>
 
-      {/* Images Row Section 1 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
+      <div style={{ padding: "10px" }}>
+        {/* Outer White Background Section */}
+        <div
+          style={{
+            backgroundColor: "white",
+            padding: "10px",
+            borderRadius: "8px",
+          
+          }}
+        >
+          {/* Single-Line Section */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "10px",
+              flexWrap: "wrap",
+            }}
+          >
+            {/* Text Section */}
+            <div>
+              <p style={{ margin: 0 }}>Showing All Results</p>
+            </div>
+
+            {/* Center Section: View and Boxes */}
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              {/* "View" Text */}
+              <p style={{ margin: 0, fontWeight: "bold", color: "#333" }}>View</p>
+
+              {/* Small Square with Dots */}
+              <div
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  border: "1px solid #ddd",
+                  borderRadius: "4px",
+                  display: "grid",
+                  gridTemplateColumns: "repeat(2, 1fr)",
+                  alignItems: "center",
+                  justifyItems: "center",
+                  gap: "2px",
+                }}
+              >
+                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+              </div>
+
+              {/* Small Square with Horizontal Lines */}
+              <div
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  border: "1px solid #ddd",
+                  borderRadius: "4px",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-evenly",
+                }}
+              >
+                <div style={{ width: "80%", height: "2px", backgroundColor: "#000" }}></div>
+                <div style={{ width: "80%", height: "2px", backgroundColor: "#000" }}></div>
+                <div style={{ width: "80%", height: "2px", backgroundColor: "#000" }}></div>
+              </div>
+            </div>
+
+            {/* Buttons and Select */}
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <select
+                style={{
+                  padding: "10px",
+                  border: "1px solid #ddd",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                <option>Popularity</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+              <button
+                style={{
+                  padding: "10px 20px",
+                  backgroundColor: "#007bff",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                Filter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <br></br>
+        <br></br>
+        
+      <Image
+          src="/images.png" // Path to the image (relative to the 'public' folder)
+          alt="Product Image"
+          width={3000} // Width of the image
+          height={300} // Height of the image
+          style={{ maxWidth: "100%", height: "auto", display: "block" }}
+        />
+      </div>
+     <br></br>
+
+     <br></br>
+     {/* Images Row Section 1 */}
+     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
         {/* Product 1 */}
         <Link href="/moreproduct">
           <div className="flex flex-col items-center">
@@ -122,9 +245,9 @@ const Product = () => {
       </div>
 
       {/* Images Row Section 2 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8">
         {/* Product 5 */}
-        <Link href="/moreproduct">
+        
           <div className="flex flex-col items-center">
             <Image
               src="/product-5.png"
@@ -147,7 +270,7 @@ const Product = () => {
               <div className="w-4 h-4 bg-black rounded-full"></div>
             </div>
           </div>
-        </Link>
+       
 
         {/* Product 6 */}
         <Link href="/moreproduct">
@@ -231,4 +354,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Page;

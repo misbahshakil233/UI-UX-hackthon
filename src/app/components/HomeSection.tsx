@@ -6,12 +6,13 @@ const HomeSection = () => {
   return (
     <section className="relative h-screen w-full bg-gray-100">
       {/* Hero Image */}
-      <div className="relative h-full w-full">
+      <div className="relative ">
         <Image
           src="/hero.jpg" // Hero image path
           alt="Hero Image"
-          layout="fill"
-          className="object-cover"
+         width={5000}
+         height={300}
+         
         />
 
         {/* Text Overlay */}

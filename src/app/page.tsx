@@ -5,17 +5,21 @@ import Editor from "./components/Editor";
 import Product from "./components/product";
 import Classic from "./components/Classic";
 import Cart from "./components/Cart";
+import Neural from "./components/Neural";
+import Footer from "./components/Foooter";
 
 export default function Home() {
   return (
     <div>
-    <Navbar />
+   
     <HomeSection />
     <Editor />
     <Product />
     <Classic />
-    <Cart />
    
+    <Neural />
+    <Cart />
+   <Footer />
     </div>
   
   );

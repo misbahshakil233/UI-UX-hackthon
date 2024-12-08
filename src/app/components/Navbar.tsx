@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
-          <a href="#home" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a href="#home" className="text-gray-500 font-bold text-lg hover:text-primary-blue">
             Home
           </a>
           <div className="relative group">
@@ -34,13 +34,13 @@ const Navbar: React.FC = () => {
               </a>
             </div>
           </div>
-          <a href="#about" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a href="/about" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
             About
           </a>
           <a href="#blog" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
             Blog
           </a>
-          <a href="#contact" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a href="/contact" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
             Contact
           </a>
           <a href="#pages" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
