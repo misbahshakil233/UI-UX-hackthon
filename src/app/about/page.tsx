@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'; // Import Image from Next.js
+import Footer from '../components/Footer';
 
 const AboutUs = () => {
   return (
@@ -177,16 +178,17 @@ const AboutUs = () => {
 </div>
 
       {/* Additional Image Section */}
-      <div className="relative w-full h-[300px] mt-52">
-        <Image
-          src="/icons.png" // Hero image path
-          alt="Hero Image"
-          width={3000}
-          height={800}
-          objectFit="cover"
-          className="absolute inset-0 m-auto rounded-lg"
-        />
-      </div>
+      <div className="relative mt-52">
+  <Image
+    src="/icons.png" // Hero image path
+    alt="Hero Image"
+    width={3000}
+    height={200}
+    objectFit="cover"
+    className="w-full h-auto rounded-lg"
+  />
+</div>
+<Footer />
     </div>
   );
 };
