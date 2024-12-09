@@ -1,14 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import { FiSearch, FiShoppingCart, FiHeart, FiChevronDown } from "react-icons/fi";
+import {
+  FiSearch,
+  FiShoppingCart,
+  FiHeart,
+  FiChevronDown,
+} from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white fixed w-full z-50  h-24 flex">
+    <nav className="bg-white fixed w-full z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3 md:px-6">
         {/* Logo */}
         <div className="flex items-center space-x-2 text-3xl font-bold">
@@ -17,7 +22,10 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
-          <a href="#home" className="text-gray-500 font-bold text-lg hover:text-primary-blue">
+          <a
+            href="/"
+            className="text-gray-500 font-bold text-lg hover:text-primary-blue"
+          >
             Home
           </a>
           <div className="relative group">
@@ -34,19 +42,34 @@ const Navbar: React.FC = () => {
               </a>
             </div>
           </div>
-          <a href="/about" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a
+            href="/about"
+            className="text-gray-500 font-bold text-lg hover:text-primary-blue"
+          >
             About
           </a>
-          <a href="/blog" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a
+            href="/blog"
+            className="text-gray-500 font-bold text-lg hover:text-primary-blue"
+          >
             Blog
           </a>
-          <a href="/contact" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a
+            href="/contact"
+            className="text-gray-500 font-bold text-lg hover:text-primary-blue"
+          >
             Contact
           </a>
-          <a href="/moreproduct" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a
+            href="/moreproduct"
+            className="text-gray-500 font-bold text-lg hover:text-primary-blue"
+          >
             Pages
           </a>
-          <a href="/pricing" className="text-gray-500 font-bold text-xl hover:text-primary-blue">
+          <a
+            href="/pricing"
+            className="text-gray-500 font-bold text-lg hover:text-primary-blue"
+          >
             Pricing
           </a>
         </div>
@@ -86,10 +109,13 @@ const Navbar: React.FC = () => {
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white text-center py-4 space-y-2 shadow-lg">
-          <a href="#home" className="block py-2 text-gray-500 font-bold hover:text-primary-blue">
+          <a
+            href="home"
+            className="block py-2 text-gray-500 font-bold hover:text-primary-blue"
+          >
             Home
           </a>
-          <div className="relative group">
+          <div className="relative">
             <button className="flex items-center justify-center space-x-1 text-gray-500 font-bold hover:text-primary-blue transition w-full">
               <span>Shop</span>
               <FiChevronDown />
@@ -103,17 +129,35 @@ const Navbar: React.FC = () => {
               </a>
             </div>
           </div>
-          <a href="#about" className="block py-2 text-gray-500 font-bold hover:text-primary-blue">
+          <a
+            href="/about"
+            className="block py-2 text-gray-500 font-bold hover:text-primary-blue"
+          >
             About
           </a>
-          <a href="#blog" className="block py-2 text-gray-500 font-bold hover:text-primary-blue">
+          <a
+            href="/blog"
+            className="block py-2 text-gray-500 font-bold hover:text-primary-blue"
+          >
             Blog
           </a>
-          <a href="#contact" className="block py-2 text-gray-500 font-bold hover:text-primary-blue">
+          <a
+            href="/contact"
+            className="block py-2 text-gray-500 font-bold hover:text-primary-blue"
+          >
             Contact
           </a>
-          <a href="#pages" className="block py-2 text-gray-500 font-bold hover:text-primary-blue">
+          <a
+            href="/pages"
+            className="block py-2 text-gray-500 font-bold hover:text-primary-blue"
+          >
             Pages
+          </a>
+          <a
+            href="/pricing"
+            className="block py-2 text-gray-500 font-bold hover:text-primary-blue"
+          >
+            Pricing
           </a>
         </div>
       )}

@@ -17,8 +17,8 @@ const Cart = () => {
         <Image 
   src="/ost.png" 
   alt="OST Item" 
-  width={100}
-  height={100} // Dynamic width
+  width={8000}
+  height={500} // Dynamic width
   className="object-cover w-full h-auto rounded-lg shadow-lg mb-4"
 />
         </div>

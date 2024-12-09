@@ -10,30 +10,34 @@ const Classic = () => {
         <Image
           src="/clasic.png" // Hero image path
           alt="Hero Image"
-          width={300} // Adjust the width as needed
-          height={300} // Adjust height accordingly
-          className="object-cover w-auto h-full absolute right-40" // Adjust image to the right side
+          width={300}
+          height={300}
+          className="object-cover w-auto h-full absolute right-10 md:right-40" // Adjusted position for mobile
         />
 
         {/* Text Overlay */}
-        <div className="absolute top-1/2 left-48 transform -translate-y-1/2 text-white px-6 max-w-lg">
-          {/* Summer 22 Text */}
-          <h1 className="text-xs sm:text-xl font-semibold mb-4">SUMMER 2020</h1>
+        <div className="absolute top-1/2 left-6 md:left-48 transform -translate-y-1/2 text-white px-4 md:px-6 max-w-sm md:max-w-lg">
+          {/* Summer 2020 Text */}
+          <h1 className="text-sm sm:text-base md:text-xl font-semibold mb-2 md:mb-4">
+            SUMMER 2020
+          </h1>
 
-          {/* New Collection Text */}
-          <p className="text-5xl sm:text-6xl font-extrabold mb-6">Vita Classic <br /> Product</p>
+          {/* Vita Classic Product Text */}
+          <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 md:mb-6">
+            Vita Classic <br /> Product
+          </p>
 
           {/* Small Description */}
-          <p className="text-xl sm:text-lg mb-8">
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8">
             We know how large objects will act,
             <br />
             but things on a small scale.
           </p>
 
           {/* Price and Button */}
-          <div className="flex items-center gap-4">
-            <p className="text-xl font-bold">$16.48</p>
-            <button className="bg-lightGreen text-white py-3 px-8 sm:py-2 sm:px-6 hover:bg-green-400 bg-[#2DC071] transition duration-300 text-lg sm:text-base">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <p className="text-lg sm:text-xl font-bold">$16.48</p>
+            <button className="bg-[#2DC071] text-white py-2 px-6 md:py-3 md:px-8 hover:bg-green-400 transition duration-300 text-sm sm:text-base md:text-lg">
               ADD TO CART
             </button>
           </div>

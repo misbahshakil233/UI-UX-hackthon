@@ -48,6 +48,27 @@ const AboutUs = () => {
         </div>
       </div>
 
+      {/* additinaol pragraph */}
+      <h1 className='text-red-600 absolute  ml-60'>Problems trying</h1> 
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-4 px-6 py-4 ">
+       
+  {/* Left Column */}
+  
+  <div className="flex-1 text-center md:text-left">
+    <p className="font-bold text-xl text-gray-800 ml-48">
+      Met minim Mollie non desert <br></br> Alamo est sit cliquey dolor do <br></br> met sent.
+    </p>
+  </div>
+  {/* Right Column */}
+  <div className="flex-1 text-center md:text-left">
+    <p className="text-xs text-gray-600 flex ">
+      Problems trying to resolve the conflict between the two major realms of<br></br>
+      Classical physics: Newtonian mechanics.
+    </p>
+  </div>
+</div>
+
+
       {/* Statistics Section */}
       <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -90,15 +111,19 @@ const AboutUs = () => {
       </div>
 
       {/* Team Members Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-44 gap-8">
-  {/* Team Member 1 */}
-  <div className="flex flex-col items-center text-center mx-auto">
- 
-  <h1 className="text-black font-extrabold text-4xl mb-6">Meet Our Team</h1>
-  <p className="text-xs text-gray-400 ">
+      <div className="flex flex-col items-center justify-center mt-44">
+  <h1 className="text-black font-extrabold text-4xl text-center">Meet Our Team</h1>
+  <p className="text-xs text-gray-400 mb-6 text-center">
     Problems trying to resolve the conflict between <br />
     the two major realms of Classical physics: Newtonian mechanics
   </p>
+</div>
+
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-28 gap-8 px-4">
+  
+  {/* Team Member 1 */}
+  <div className="flex flex-col items-center text-center mx-auto">
+    
 
     <div className="relative mb-4">
       <Image
@@ -125,7 +150,7 @@ const AboutUs = () => {
   </div>
 
   {/* Team Member 2 */}
-  <div className="flex flex-col items-center text-center">
+  <div className="flex flex-col items-center text-center mx-auto">
     <div className="relative mb-4">
       <Image
         src="/team-2.jpg"
@@ -151,7 +176,7 @@ const AboutUs = () => {
   </div>
 
   {/* Team Member 3 */}
-  <div className="flex flex-col items-center text-center">
+  <div className="flex flex-col items-center text-center mx-auto">
     <div className="relative mb-4">
       <Image
         src="/team-3.jpg"
@@ -189,7 +214,37 @@ const AboutUs = () => {
   />
 </div>
 
+
+<section className="flex items-center justify-between p-8">
+  {/* Left Section - Text with Blue Background */}
+  <div className="w-full md:w-1/2 bg-blue-500 text-white p-6 rounded-lg flex flex-col justify-center h-full">
+    
+    <h2 className="text-xs font-bold mb-4 ml-40">WORK WITH US</h2>
+    <h2 className="text-3xl font-bold mb-4">Now Let’s grow Your</h2>
+    <p className="text-lg">
+      The gradual accumulation of information about atomic and <br /> small-scale behavior during the first quarter of the 20th
+    </p>
     </div>
+
+
+  {/* Right Section - Image with Gray Background */}
+  <div className="w-full md:w-1/2 bg-gray-300 p-6 rounded-lg flex items-center justify-center h-full">
+    <Image
+      src="/about2.png" // Replace with your image path
+      alt="Section Image"
+      height={300} // Adjust height as per requirement
+      width={300}  // Adjust width as per requirement
+      className="w-full h-auto object-cover"
+    />
+  </div>
+</section>
+
+
+  </div>
+
+
+
+   
   );
 };
 
