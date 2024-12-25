@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Footer from '../components/Foooter'
+import Footer from '../components/Footer'
 import Link from "next/link";
 const Page = () => {
   return (
@@ -8,10 +8,7 @@ const Page = () => {
       
       <div style={{ padding: "20px" }}>
         {/* Content Above Image */}
-        <div style={{ marginBottom: "10px" }}>
-          <h1 style={{ margin: "0 0 10px" }}>Product List</h1>
-          <p style={{ margin: 0 }}>Explore our collection of amazing products below!</p>
-        </div>
+       
 
         {/* Image Section */}
         <Image
@@ -38,13 +35,13 @@ const Page = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
+              justifyContent: "space-evenly",
               gap: "10px",
               flexWrap: "wrap",
             }}
           >
             {/* Text Section */}
-            <div>
+            <div className='flex justify-between'>
               <p style={{ margin: 0 }}>Showing All Results</p>
             </div>
 
@@ -67,10 +64,10 @@ const Page = () => {
                   gap: "2px",
                 }}
               >
-                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
-                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
-                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
-                <div style={{ width: "5px", height: "5px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
+                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
               </div>
 
               {/* Small Square with Horizontal Lines */}
@@ -135,7 +132,7 @@ const Page = () => {
         />
       </div>
      <br></br>
-
+<Footer />
      <br></br>
      {/* Images Row Section 1 */}
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">

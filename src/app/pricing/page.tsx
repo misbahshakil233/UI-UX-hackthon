@@ -94,6 +94,107 @@ const Page = () => {
           style={{ maxWidth: "100%", height: "auto", display: "block" }}
         />
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section className="py-16">
+  {/* Title and Paragraph */}
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold mb-4">Pricing FAQs</h2>
+    <p className="text-lg text-[#737373] leading-8">
+
+      Problems trying to resolve the conflict between <br></br> the two major realms of Classical physics.
+    </p>
+  </div>
+
+  {/* Grid with 3 Rows and 2 Cards in each row */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
+    {/* Card 1 */}
+    <div className="">
+      <h6 className="text-sm font-bold mb-4">the quick fox jumps over the lazy dog</h6>
+      <p className="text-sm text-gray-600">
+      Met minim Mollie non desert Alamo est sit cliquey dolor <br></br>
+do met sent. RELIT official consequent door ENIM RELIT Mollie. <br></br>
+Excitation venial consequent sent nostrum met.
+      </p>
+    </div>
+    {/* Card 2 */}
+    <div className="">
+      <h6 className="text-sm font-bold mb-4">the quick fox jumps over the lazy dog</h6>
+      <p className="text-sm text-gray-600">
+      Met minim Mollie non desert Alamo est sit cliquey dolor <br></br>
+do met sent. RELIT official consequent door ENIM RELIT Mollie. <br></br>
+Excitation venial consequent sent nostrum met.
+      </p>
+    </div>
+    {/* Card 3 */}
+    <div className="">
+      <h6 className="text-sm font-bold mb-4">the quick fox jumps over the lazy dog</h6>
+      <p className="text-sm text-gray-600">
+      Met minim Mollie non desert Alamo est sit cliquey dolor <br></br>
+do met sent. RELIT official consequent door ENIM RELIT Mollie. <br></br>
+Excitation venial consequent sent nostrum met.
+      </p>
+    </div>
+    {/* Card 4 */}
+    <div className="">
+      <h6 className="text-sm font-bold mb-4">the quick fox jumps over the lazy dog</h6>
+      <p className="text-sm text-gray-600">
+      Met minim Mollie non desert Alamo est sit cliquey dolor <br></br>
+do met sent. RELIT official consequent door ENIM RELIT Mollie. <br></br>
+Excitation venial consequent sent nostrum met.
+      </p>
+    </div>
+    {/* Card 5 */}
+    <div className="">
+      <h6 className="text-sm font-bold mb-4">the quick fox jumps over the lazy dog</h6>
+      <p className="text-sm text-gray-600">
+      Met minim Mollie non desert Alamo est sit cliquey dolor <br></br>
+do met sent. RELIT official consequent door ENIM RELIT Mollie. <br></br>
+Excitation venial consequent sent nostrum met.
+      </p>
+    </div>
+    {/* Card 6 */}
+    <div className="">
+      <h6 className="text-sm font-bold mb-4">the quick fox jumps over the lazy dog</h6>
+      <p className="text-sm text-gray-600">
+      Met minim Mollie non desert Alamo est sit cliquey dolor <br></br>
+do met sent. RELIT official consequent door ENIM RELIT Mollie. <br></br>
+Excitation venial consequent sent nostrum met.
+      </p>
+    </div>
+  </div>
+
+  {/* Bottom Text */}
+  <div className="text-center mt-12 text-xl font-medium text-gray-400">
+    <p>Haven’t got your answer? Contact our support.</p>
+    
+  </div>
+</section>
+
+
+ 
+
+
+
+
         {/* Subheading */}
       <p className="text-3xl font-bold mt-36 text-center">
       Start your 14 days free trial

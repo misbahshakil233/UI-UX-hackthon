@@ -214,30 +214,14 @@ const AboutUs = () => {
   />
 </div>
 
-
-<section className="flex items-center justify-between p-8">
-  {/* Left Section - Text with Blue Background */}
-  <div className="w-full md:w-1/2 bg-blue-500 text-white p-6 rounded-lg flex flex-col justify-center h-full">
-    
-    <h2 className="text-xs font-bold mb-4 ml-40">WORK WITH US</h2>
-    <h2 className="text-3xl font-bold mb-4">Now Let’s grow Your</h2>
-    <p className="text-lg">
-      The gradual accumulation of information about atomic and <br /> small-scale behavior during the first quarter of the 20th
-    </p>
-    </div>
-
-
-  {/* Right Section - Image with Gray Background */}
-  <div className="w-full md:w-1/2 bg-gray-300 p-6 rounded-lg flex items-center justify-center h-full">
-    <Image
-      src="/about2.png" // Replace with your image path
-      alt="Section Image"
-      height={300} // Adjust height as per requirement
-      width={300}  // Adjust width as per requirement
-      className="w-full h-auto object-cover"
-    />
-  </div>
-</section>
+<br></br>
+<div>
+  <Image
+  alt='section'
+  src="/aboutimage.png"
+  height={500}
+  width={2000} />
+</div>
 
 
   </div>
