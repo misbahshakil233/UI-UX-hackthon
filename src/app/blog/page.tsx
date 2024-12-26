@@ -4,16 +4,16 @@ import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt } from 'r
 
 const Page = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
-      {/* Heading */}
-      <h1 className="text-lg font-bold text-gray-600 mb-2 text-center">
-        What we do
-      </h1>
-      
-      {/* Subheading */}
-      <p className="text-7xl font-bold mb-6 text-center">
-        Innovation tailored for you
-      </p>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 pt-16 sm:pt-24">
+    {/* Heading */}
+    <h1 className="text-lg sm:text-base font-bold text-gray-600 mb-2 text-center">
+      What we do
+    </h1>
+  
+    {/* Subheading */}
+    <p className="text-5xl sm:text-3xl font-bold mb-6 text-center">
+      Innovation tailored for you
+    </p>
       
       {/* Breadcrumb */}
       <nav className="text-black text-sm md:text-base mb-6 flex">

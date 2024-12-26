@@ -148,7 +148,7 @@ const Navbar: React.FC = () => {
             Contact
           </a>
           <a
-            href="/pages"
+            href="/moreproduct"
             className="block py-2 text-gray-500 font-bold hover:text-primary-blue"
           >
             Pages

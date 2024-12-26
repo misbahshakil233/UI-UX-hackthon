@@ -6,19 +6,22 @@ const Page = () => {
   return (
     <div>
       
-      <div style={{ padding: "20px" }}>
-        {/* Content Above Image */}
-       
+      <div className="px-5 pt-4">
+  {/* Content Above Image */}
+  {/* Add any additional content here */}
 
-        {/* Image Section */}
-        <Image
-          src="/list.png" // Path to the image (relative to the 'public' folder)
-          alt="Product Image"
-          width={3000} // Width of the image
-          height={200} // Height of the image
-          style={{ maxWidth: "100%", height: "auto", display: "block" }}
-        />
-      </div>
+  {/* Image Section */}
+  <Image
+    src="/list.png" // Path to the image
+    alt="Product Image"
+    width={3000} // Width of the image
+    height={200} // Height of the image
+    className="max-w-full h-auto block mt-4 md:mt-6"
+    style={{
+      marginTop: "60px", // Ensure it clears the navbar
+    }}
+  />
+</div>
 
       <div style={{ padding: "10px" }}>
         {/* Outer White Background Section */}
@@ -40,82 +43,46 @@ const Page = () => {
               flexWrap: "wrap",
             }}
           >
-            {/* Text Section */}
-            <div className='flex justify-between'>
-              <p style={{ margin: 0 }}>Showing All Results</p>
-            </div>
+            <div className="container flex flex-col sm:flex-row sm:justify-between items-center gap-4 sm:gap-0 px-4 py-2">
+  {/* Text Section */}
+  <div className="text-section">
+    <p className="text-gray-600 text-sm sm:text-base m-0">Showing All Results</p>
+  </div>
 
-            {/* Center Section: View and Boxes */}
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-              {/* "View" Text */}
-              <p style={{ margin: 0, fontWeight: "bold", color: "#333" }}>View</p>
+  {/* Center Section: View and Boxes */}
+  <div className="view-section flex items-center gap-4">
+    {/* "View" Text */}
+    <p className="font-bold text-gray-800 m-0">View</p>
 
-              {/* Small Square with Dots */}
-              <div
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  border: "1px solid #ddd",
-                  borderRadius: "4px",
-                  display: "grid",
-                  gridTemplateColumns: "repeat(2, 1fr)",
-                  alignItems: "center",
-                  justifyItems: "center",
-                  gap: "2px",
-                }}
-              >
-                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
-                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
-                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
-                <div style={{ width: "10px", height: "10px", backgroundColor: "#000", borderRadius: "50%" }}></div>
-              </div>
+    {/* Small Square with Dots */}
+    <div className="icon-grid grid grid-cols-2 gap-1 border border-gray-300 rounded w-8 h-8">
+      <div className="dot bg-black rounded-full w-2 h-2"></div>
+      <div className="dot bg-black rounded-full w-2 h-2"></div>
+      <div className="dot bg-black rounded-full w-2 h-2"></div>
+      <div className="dot bg-black rounded-full w-2 h-2"></div>
+    </div>
 
-              {/* Small Square with Horizontal Lines */}
-              <div
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  border: "1px solid #ddd",
-                  borderRadius: "4px",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "space-evenly",
-                }}
-              >
-                <div style={{ width: "80%", height: "2px", backgroundColor: "#000" }}></div>
-                <div style={{ width: "80%", height: "2px", backgroundColor: "#000" }}></div>
-                <div style={{ width: "80%", height: "2px", backgroundColor: "#000" }}></div>
-              </div>
-            </div>
+    {/* Small Square with Horizontal Lines */}
+    <div className="icon-lines flex flex-col justify-evenly border border-gray-300 rounded w-8 h-8">
+      <div className="line bg-black h-0.5 w-4/5"></div>
+      <div className="line bg-black h-0.5 w-4/5"></div>
+      <div className="line bg-black h-0.5 w-4/5"></div>
+    </div>
+  </div>
 
-            {/* Buttons and Select */}
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <select
-                style={{
-                  padding: "10px",
-                  border: "1px solid #ddd",
-                  borderRadius: "4px",
-                  cursor: "pointer",
-                }}
-              >
-                <option>Popularity</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-              </select>
-              <button
-                style={{
-                  padding: "10px 20px",
-                  backgroundColor: "#007bff",
-                  color: "white",
-                  border: "none",
-                  borderRadius: "4px",
-                  cursor: "pointer",
-                }}
-              >
-                Filter
-              </button>
-            </div>
+  {/* Buttons and Select */}
+  <div className="action-section flex items-center gap-2">
+    <select className="p-2 border border-gray-300 rounded cursor-pointer">
+      <option>Popularity</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+      Filter
+    </button>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
